@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
                 val intent= Intent(this, pantallaObjeto::class.java)
                 startActivity(intent)
             }else if (numAleatorio==2){
-                val intent2= Intent(this, pantallaCiudad::class.java)
-                startActivity(intent2)
+                val intent= Intent(this, pantallaCiudad::class.java)
+                startActivity(intent)
             }else if (numAleatorio==3){
-                val intent3= Intent(this, pantallaMercader::class.java)
-                startActivity(intent3)
+                val intent= Intent(this, pantallaMercader::class.java)
+                startActivity(intent)
             }else if (numAleatorio==4){
-                val intent4= Intent(this, pantallaEnemigo::class.java)
-                startActivity(intent4)
+                val intent= Intent(this, pantallaEnemigo::class.java)
+                startActivity(intent)
 
             }
         }
