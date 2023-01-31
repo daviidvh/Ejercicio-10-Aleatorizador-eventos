@@ -12,6 +12,21 @@
         android:theme="@style/Theme.Ejercicio10Aleatorizadoreventos"
         tools:targetApi="31">
         <activity
+            android:name=".pantallaBlanco"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaEnemigo"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaMercader"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaCiudad"
+            android:exported="false" />
+        <activity
+            android:name=".pantallaObjeto"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
