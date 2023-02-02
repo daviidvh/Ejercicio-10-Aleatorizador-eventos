@@ -13,6 +13,7 @@ class pantallaObjeto : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.botonRecoger.setOnClickListener(){
+            mochila()
             val intent= Intent(this, pantallaBlanco::class.java)
             startActivity(intent)
         }
