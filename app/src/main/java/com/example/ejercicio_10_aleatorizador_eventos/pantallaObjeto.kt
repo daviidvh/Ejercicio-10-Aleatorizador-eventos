@@ -11,9 +11,9 @@ class pantallaObjeto : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityPantallaObjetoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        var personaje1=Personaje("pepe")
+        personaje1.mochila.addArticulo()
         binding.botonRecoger.setOnClickListener(){
-            mochila()
             val intent= Intent(this, pantallaBlanco::class.java)
             startActivity(intent)
         }
