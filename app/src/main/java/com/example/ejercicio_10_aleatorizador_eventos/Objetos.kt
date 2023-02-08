@@ -4,14 +4,4 @@ class Objetos (private var peso:Int=50, private var valor:Int=10, private var vi
     fun getPeso(): Int {
         return peso
     }
-
-    fun getValor(): Int {
-        return valor
-    }
-    fun getVida(): Int {
-        return vida
-    }
-
-
-
 }

@@ -15,6 +15,8 @@ class pantallaObjeto : AppCompatActivity() {
         var personaje1=Personaje("pepe")
         binding.botonRecoger.setOnClickListener(){
             personaje1.mochila.addArticulo(Objetos())
+            Toast.makeText(this, "Añadiendo el objeto a la mochila", Toast.LENGTH_SHORT).show()
+
             val intent= Intent(this, pantallaBlanco::class.java)
             startActivity(intent)
         }
