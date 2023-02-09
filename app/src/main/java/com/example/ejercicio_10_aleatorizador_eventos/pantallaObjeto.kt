@@ -1,5 +1,6 @@
 package com.example.ejercicio_10_aleatorizador_eventos
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,9 +15,7 @@ class pantallaObjeto : AppCompatActivity() {
         setContentView(binding.root)
         var personaje1=Personaje("pepe")
         binding.botonRecoger.setOnClickListener(){
-            personaje1.mochila.addArticulo(Objetos())
-            Toast.makeText(this, "Añadiendo el objeto a la mochila", Toast.LENGTH_SHORT).show()
-
+            personaje1.mochila.addArticulo(Objetos(), applicationContext)
             val intent= Intent(this, pantallaBlanco::class.java)
             startActivity(intent)
         }
