@@ -20,5 +20,7 @@ class Mochila(private var pesoMochila: Int){
 
      }
 
-
+     fun getPesoMochila(): Int {
+          return pesoMochila
+     }
 }

@@ -7,18 +7,18 @@
     tools:context=".pantallaMercader">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imagenMercader"
         android:layout_width="250dp"
         android:layout_height="371dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textoMercader"
         app:srcCompat="@drawable/mercader" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textoMercader"
         android:layout_width="79dp"
         android:layout_height="25dp"
         android:layout_marginTop="76dp"
@@ -40,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toEndOf="@+id/botonComerciar"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imagenMercader" />
 
     <Button
         android:id="@+id/botonComerciar"
@@ -51,7 +51,7 @@
         android:backgroundTint="#816409"
         android:text="Comerciar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imagenMercader" />
 
     <Button
         android:id="@+id/botonComprar"
@@ -129,5 +129,29 @@
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/objetoCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="340dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/objeto" />
+
+    <TextView
+        android:id="@+id/textoObjeto"
+        android:layout_width="295dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:text="Este es el objeto que vas a comprar"
+        app:layout_constraintBottom_toTopOf="@+id/objetoCompra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

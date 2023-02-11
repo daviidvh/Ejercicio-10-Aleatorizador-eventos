@@ -19,6 +19,9 @@ class pantallaMercader : AppCompatActivity() {
         binding.textViewInfo.visibility=View.INVISIBLE
         binding.editTextNumArticulos.visibility=View.INVISIBLE
         binding.botonCarrito.visibility= View.INVISIBLE
+        //Cosas Compra
+        binding.textoObjeto.visibility= View.INVISIBLE
+        binding.objetoCompra.visibility= View.INVISIBLE
 
         binding.botonComerciar.setOnClickListener(){
 
@@ -29,16 +32,24 @@ class pantallaMercader : AppCompatActivity() {
             binding.botonVender.visibility = View.VISIBLE
             binding.botonCancelar.visibility = View.VISIBLE
 
+
+
             //BOTON COMPRAR
             binding.botonComprar.setOnClickListener(){
                 binding.textViewInfo.visibility=View.VISIBLE
                 binding.editTextNumArticulos.visibility=View.VISIBLE
                 binding.botonCarrito.visibility= View.VISIBLE
+                binding.textoMercader.visibility=View.INVISIBLE
+                binding.imagenMercader.visibility=View.INVISIBLE
+                //Objeto visible
+                binding.textoObjeto.visibility=View.VISIBLE
+                binding.objetoCompra.visibility=View.VISIBLE
                 binding.botonCarrito.setOnClickListener(){
 
                 }
-
             }
+
+
 
 
             //BOTON VENDER
