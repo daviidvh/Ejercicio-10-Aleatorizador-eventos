@@ -9,10 +9,10 @@ class cosasMercader : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityCosasMercaderBinding.inflate(layoutInflater)
         setContentView(binding.root)
-       var personaje1 = intent.getSerializableExtra("personaje") as Personaje
-        binding.infoEspacio.text.equals(personaje1.mochila.getPesoMochila()).toString()
 
-        binding.infoObjetos.text.equals(personaje1.mochila.getContenido().count())
+        binding.infoEspacio.text = personaje1.mochila.getPesoMochila().toString()
+
+        binding.infoObjetos.text= personaje1.mochila.getContenido().count().toString()
 
     }
 }
