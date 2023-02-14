@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.ejercicio_10_aleatorizador_eventos.databinding.ActivityPantallaMercaderBinding
+
 
 class pantallaMercader : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -115,6 +117,11 @@ class pantallaMercader : AppCompatActivity() {
                 binding.botonVenta.setOnClickListener(){
                     val intent= Intent(this, cosasMercader::class.java)
                     startActivity(intent)
+                    if(binding.editTextNumArticulos.text.toString() <= Personaje().mochila.getContenido().count().toString()){
+                        Toast.makeText(this, "Se han vendido:", Toast.LENGTH_SHORT).show()
+                    }else
+                        Toast.makeText(this, "No hay objetos para vender", Toast.LENGTH_SHORT).show()
+
                 }
             }
 
