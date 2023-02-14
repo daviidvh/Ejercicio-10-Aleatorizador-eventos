@@ -1,9 +1,10 @@
 package com.example.ejercicio_10_aleatorizador_eventos
 
 
-class Personaje {
+class Personaje:java.io.Serializable {
     var nombre =""
-    var mochila:Mochila= Mochila(10)
+    var mochila:Mochila= Mochila(100)
+
 
 
     constructor(nombre:String){

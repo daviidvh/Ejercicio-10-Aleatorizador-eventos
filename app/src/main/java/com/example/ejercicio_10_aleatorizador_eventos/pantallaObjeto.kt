@@ -17,7 +17,9 @@ class pantallaObjeto : AppCompatActivity() {
         binding.botonRecoger.setOnClickListener(){
             personaje1.mochila.addArticulo(Objetos(), applicationContext)
             val intent= Intent(this, pantallaBlanco::class.java)
+            intent.putExtra("personaje",personaje1)
             startActivity(intent)
+
         }
 
         binding.botonContinuarObj.setOnClickListener(){

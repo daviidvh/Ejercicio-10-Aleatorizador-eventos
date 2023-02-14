@@ -5,7 +5,7 @@ import android.widget.Toast
 
 
 
-class Mochila(private var pesoMochila: Int){
+class Mochila(private var pesoMochila: Int):java.io.Serializable {
      private var contenido=ArrayList<Objetos>()
      fun addArticulo(articulo:Objetos, context: Context){
           if (articulo.getPeso()<=pesoMochila){
@@ -19,7 +19,9 @@ class Mochila(private var pesoMochila: Int){
           println("Peso restante de la Mochila: "+pesoMochila)
 
      }
-
+     fun getContenido(): ArrayList<Objetos> {
+          return contenido
+     }
      fun getPesoMochila(): Int {
           return pesoMochila
      }

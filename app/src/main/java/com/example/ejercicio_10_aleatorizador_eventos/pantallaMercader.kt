@@ -72,7 +72,8 @@ class pantallaMercader : AppCompatActivity() {
                 binding.botonVenta.visibility=View.INVISIBLE
                 //BOTON CARRITO
                 binding.botonCarrito.setOnClickListener(){
-
+                    val intent= Intent(this, cosasMercader::class.java)
+                    startActivity(intent)
                 }
             }
 
@@ -112,7 +113,8 @@ class pantallaMercader : AppCompatActivity() {
 
                 //BOTON VENTA
                 binding.botonVenta.setOnClickListener(){
-
+                    val intent= Intent(this, cosasMercader::class.java)
+                    startActivity(intent)
                 }
             }
 

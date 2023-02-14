@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Ejercicio10Aleatorizadoreventos"
         tools:targetApi="31">
         <activity
+            android:name=".cosasMercader"
+            android:exported="false" />
+        <activity
             android:name=".pantallaBlanco"
             android:exported="false" />
         <activity
