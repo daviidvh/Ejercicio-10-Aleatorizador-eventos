@@ -202,10 +202,10 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toEndOf="@+id/textViewVenta"
         app:layout_constraintTop_toBottomOf="@+id/objetoCompra"
-        app:layout_constraintVertical_bias="0.379" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <ImageButton
         android:id="@+id/botonVenta"

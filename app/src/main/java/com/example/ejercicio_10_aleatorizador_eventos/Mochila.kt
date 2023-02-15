@@ -25,4 +25,9 @@ class Mochila(private var pesoMochila: Int):java.io.Serializable {
      fun getPesoMochila(): Int {
           return pesoMochila
      }
+
+     fun setPeso(newPesoMochila: Int){
+          pesoMochila=newPesoMochila
+     }
+
 }

@@ -75,6 +75,10 @@ class pantallaMercader : AppCompatActivity() {
                 //BOTON CARRITO
                 binding.botonCarrito.setOnClickListener(){
                     val intent= Intent(this, cosasMercader::class.java)
+                    var numCompra= binding.editTextNumArticulos.text.toString().toInt()
+                    for(x in 0 until numCompra) {
+                        personaje1.mochila.addArticulo(Objetos(), this)
+                    }
                     startActivity(intent)
                 }
             }
@@ -117,7 +121,13 @@ class pantallaMercader : AppCompatActivity() {
                 binding.botonVenta.setOnClickListener(){
                     val intent= Intent(this, cosasMercader::class.java)
                     startActivity(intent)
-                    if(binding.editTextNumArticulos.text.toString() <= Personaje().mochila.getContenido().count().toString()){
+                    if(binding.editTextArticulosVenta.text.toString().toInt() <= personaje1.mochila.getContenido().count()){
+                        var numArticulos=binding.editTextArticulosVenta.text.toString().toInt()
+                        for(x in 0 until numArticulos){
+                            personaje1.mochila.setPeso(personaje1.mochila.getPesoMochila()+ Objetos().getPeso())
+                            personaje1.mochila.getContenido().removeFirst()
+                        }
+
                         Toast.makeText(this, "Se han vendido:", Toast.LENGTH_SHORT).show()
                     }else
                         Toast.makeText(this, "No hay objetos para vender", Toast.LENGTH_SHORT).show()
