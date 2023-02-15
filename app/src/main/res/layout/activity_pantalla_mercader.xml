@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="20dp"
-    tools:context=".pantallaMercader">
+    tools:context=".pantallaMercader"
+    tools:layout_editor_absoluteX="-18dp"
+    tools:layout_editor_absoluteY="96dp">
 
     <ImageView
         android:id="@+id/imagenMercader"
@@ -34,12 +35,12 @@
         android:id="@+id/botonContinuarMer"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#816409"
         android:text="Continuar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toEndOf="@+id/botonComerciar"
         app:layout_constraintTop_toBottomOf="@+id/imagenMercader" />
 
@@ -47,104 +48,95 @@
         android:id="@+id/botonComerciar"
         android:layout_width="145dp"
         android:layout_height="51dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="80dp"
         android:backgroundTint="#816409"
         android:text="Comerciar"
         app:layout_constraintBottom_toTopOf="@+id/botonComprar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagenMercader"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.416" />
 
     <Button
         android:id="@+id/botonComprar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginStart="36dp"
         android:backgroundTint="#816409"
         android:text="Comprar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 
     <Button
         android:id="@+id/botonCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="#816409"
         android:text="Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonContinuarMer"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 
     <Button
         android:id="@+id/botonVender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="#816409"
         android:text="Vender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/botonCancelar"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/botonComprar"
-        app:layout_constraintTop_toBottomOf="@+id/botonContinuarMer"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
 
     <TextView
         android:id="@+id/textViewInfo"
         android:layout_width="194dp"
         android:layout_height="36dp"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="152dp"
         android:text="Cuantos articulos desea comprar"
         app:layout_constraintBottom_toTopOf="@+id/botonComprar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextNumArticulos"
         android:layout_width="65dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="152dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/botonComprar"
-        app:layout_constraintEnd_toStartOf="@+id/botonCarrito"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toEndOf="@+id/textViewInfo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintStart_toEndOf="@+id/textViewInfo" />
 
     <ImageButton
         android:id="@+id/botonCarrito"
         android:layout_width="40dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/carrito"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toEndOf="@+id/textViewInfo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumArticulos"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintVertical_bias="0.699" />
 
     <ImageView
         android:id="@+id/objetoCompra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="340dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumArticulos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/objeto" />
 
@@ -179,9 +171,12 @@
         android:layout_height="299dp"
         android:layout_marginTop="4dp"
         android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVenta"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoVenta"
+        app:layout_constraintVertical_bias="0.412"
         app:srcCompat="@drawable/mochila" />
 
     <TextView
@@ -189,37 +184,35 @@
         android:layout_width="195dp"
         android:layout_height="35dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="8dp"
         android:text="Cuantos articulos vas a vender"
+        app:layout_constraintBottom_toTopOf="@+id/botonVender"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/objetoCompra" />
+        app:layout_constraintTop_toBottomOf="@+id/objetoCompra"
+        app:layout_constraintVertical_bias="0.148" />
 
     <EditText
         android:id="@+id/editTextArticulosVenta"
         android:layout_width="65dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="192dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
-        app:layout_constraintStart_toEndOf="@+id/textViewVenta"
-        app:layout_constraintTop_toBottomOf="@+id/objetoCompra"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintBottom_toTopOf="@+id/botonVender"
+        app:layout_constraintStart_toEndOf="@+id/textViewVenta" />
 
     <ImageButton
         android:id="@+id/botonVenta"
         android:layout_width="56dp"
         android:layout_height="50dp"
         android:layout_marginStart="7dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginBottom="284dp"
         android:background="@drawable/venta"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextArticulosVenta"
-        app:layout_constraintTop_toBottomOf="@+id/objetoCompra"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toEndOf="@+id/editTextArticulosVenta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
