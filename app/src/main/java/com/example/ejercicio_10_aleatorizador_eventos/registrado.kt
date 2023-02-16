@@ -12,9 +12,10 @@ class registrado : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityRegistradoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        title="Registro"
 
         binding.botonRegistrar.setOnClickListener() {
-            if (binding.editTextEmailRegistro.text.isNotEmpty() && binding.editTextTextPassword.text.isNotEmpty()) {
+            if (binding.editTextEmailRegistro.text.isNotEmpty() && binding.editTextTextPassword.text.isNotEmpty()){
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(
                     binding.editTextEmailRegistro.text.toString(),
                     binding.editTextTextPassword.text.toString()
@@ -29,7 +30,9 @@ class registrado : AppCompatActivity() {
                             .show()
                     }
                 }
-            }
+            }else{
+               Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
+             }
         }
     }
 }
