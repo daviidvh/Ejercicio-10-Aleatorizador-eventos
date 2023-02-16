@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918920370786",
+    "project_id": "apppmdm-542fc",
+    "storage_bucket": "apppmdm-542fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918920370786:android:41655feeaa8317b6780f3b",
+        "android_client_info": {
+          "package_name": "com.example.ejercicio_10_aleatorizador_eventos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918920370786-o36avmvkvqf49pb35us6jq86kkg3q99l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF5dRrYWlSn5x9VSsCvZsW1mQeb5e1YmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918920370786-o36avmvkvqf49pb35us6jq86kkg3q99l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
