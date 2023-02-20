@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.ejercicio_10_aleatorizador_eventos.databinding.ActivityLoginBinding
-import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -21,6 +20,15 @@ class login : AppCompatActivity() {
         var mediaPlayer = MediaPlayer.create(this, R.raw.musica)
         mediaPlayer.seekTo(0)
         mediaPlayer.start()
+        mediaPlayer.isLooping = true
+
+        binding.btnpausa.setOnClickListener(){
+            mediaPlayer.pause()
+        }
+
+        binding.btnplay.setOnClickListener(){
+            mediaPlayer.start()
+        }
 
 
 

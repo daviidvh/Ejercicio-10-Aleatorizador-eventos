@@ -6,7 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".login">
 
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064">
+
+        <ImageButton
+            android:id="@+id/btnplay"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:background="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/btnpausa"
+            android:layout_width="29dp"
+            android:layout_height="23dp"
+            android:background="@drawable/pausa" />
+    </LinearLayout>
+
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="311dp"
         android:layout_height="367dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,7 +41,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="117dp" >
+            android:layout_height="117dp">
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -27,7 +52,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/editTextEmail"
@@ -40,7 +65,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/editTextPassword"
@@ -53,7 +78,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/botonIniciarSesion"
@@ -64,7 +89,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textViewRegistro"
