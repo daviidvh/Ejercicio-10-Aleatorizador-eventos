@@ -13,22 +13,26 @@ class pantallaClases : AppCompatActivity() {
 
         binding.botonMago.setOnClickListener {
             binding.foto.setImageResource(R.drawable.mago)
-            personaje1.clase.equals("mago")
+            personaje1.setClase("mago")
         }
         binding.botonLadron.setOnClickListener {
             binding.foto.setImageResource(R.drawable.ladron)
-            personaje1.clase.equals("ladron")
+            personaje1.setClase("ladron")
         }
         binding.botonGuerrero.setOnClickListener {
             binding.foto.setImageResource(R.drawable.guerrero)
-            personaje1.clase.equals("guerrero")
+            personaje1.setClase("guerrero")
         }
         binding.botonBerserker.setOnClickListener {
             binding.foto.setImageResource(R.drawable.berserker)
-            personaje1.clase.equals("berserker")
+            personaje1.setClase("berserker")
 
         }
+        binding.botonMercader.setOnClickListener {
+            binding.foto.setImageResource(R.drawable.mercader)
+            personaje1.setClase("mercader")
 
+        }
         binding.botonAceptar.setOnClickListener {
             val cambio= Intent(this, pantallaRaza::class.java)
             startActivity(cambio)
