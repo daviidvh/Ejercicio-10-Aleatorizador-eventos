@@ -14,6 +14,14 @@ class registrado : AppCompatActivity() {
         setContentView(binding.root)
         title="Registro"
 
+        binding.btnpausa.setOnClickListener(){
+            mediaPlayer.pause()
+        }
+
+        binding.btnplay.setOnClickListener(){
+            mediaPlayer.start()
+        }
+
         binding.botonRegistrar.setOnClickListener() {
             if (binding.editTextEmailRegistro.text.isNotEmpty() && binding.editTextTextPassword.text.isNotEmpty()){
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(

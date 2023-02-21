@@ -11,6 +11,14 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnpausa.setOnClickListener(){
+            mediaPlayer.pause()
+        }
+
+        binding.btnplay.setOnClickListener(){
+            mediaPlayer.start()
+        }
+
 
         binding.imgDado.setOnClickListener(){
             var numAleatorio=(1..4).random()

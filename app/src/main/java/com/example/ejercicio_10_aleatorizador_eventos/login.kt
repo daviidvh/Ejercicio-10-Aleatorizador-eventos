@@ -17,7 +17,7 @@ class login : AppCompatActivity() {
         setContentView(binding.root)
         title="Login"
 
-        var mediaPlayer = MediaPlayer.create(this, R.raw.musica)
+        mediaPlayer = MediaPlayer.create(this, R.raw.musica)
         mediaPlayer.seekTo(0)
         mediaPlayer.start()
         mediaPlayer.isLooping = true
@@ -39,7 +39,7 @@ class login : AppCompatActivity() {
                     binding.editTextPassword.text.toString()
                 ).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, pantallaClases::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, "Error al autentificar el usuario", Toast.LENGTH_SHORT)
