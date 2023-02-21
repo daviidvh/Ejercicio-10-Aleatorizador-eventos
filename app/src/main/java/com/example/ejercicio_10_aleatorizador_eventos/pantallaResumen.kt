@@ -41,9 +41,9 @@ class pantallaResumen : AppCompatActivity() {
         var vida=200
         var monedero=0
 
-        personaje1.nombre.equals(binding.editText.text.toString())
+        personaje1.setNombre(binding.editText.text.toString())
 
-        binding.nombrePersonaje.setText(personaje1.nombre)
+        binding.nombrePersonaje.text = personaje1.getNombre()
         binding.fuerza.setText(randomFuerza.toString())
         binding.defensa.setText(randomDefensa.toString())
         binding.mochila.setText(tamMochila.toString())

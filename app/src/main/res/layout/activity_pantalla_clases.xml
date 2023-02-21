@@ -15,7 +15,7 @@
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonMercader"
         app:layout_constraintVertical_bias="0.0" />
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#74C85E0D"
         android:text="Mago"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,11 +56,11 @@
         android:id="@+id/botonLadron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#74C85E0D"
         android:text="Ladrón"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toEndOf="@+id/botonMago"
         app:layout_constraintTop_toBottomOf="@+id/foto" />
 
@@ -68,11 +68,11 @@
         android:id="@+id/botonMercader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#74C85E0D"
         android:text="Mercader"
         app:layout_constraintEnd_toStartOf="@+id/botonBerserker"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toEndOf="@+id/botonGuerrero"
         app:layout_constraintTop_toBottomOf="@+id/botonGuerrero" />
 
