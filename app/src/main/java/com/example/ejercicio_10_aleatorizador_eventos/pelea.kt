@@ -19,26 +19,37 @@ class pelea : AppCompatActivity() {
         binding.botonhuirP.setOnClickListener(){
             huir()
         }
+
+        binding.progressBarUsuario.progress=personaje1.getVida()
+        var enemigo:enemigos
+        var numRandomEnemigo:Int=(1 until 2).random()
+        if (numRandomEnemigo==1){
+            enemigo= enemigoNormal
+            binding.progressBarEnemigo.progress=enemigo.vida
+        }else{
+            enemigo= enemigoJefe
+            binding.progressBarEnemigo.progress=enemigo.vida
+        }
+    }
+    fun ataque(){
+        var ataqueRandom:Int=(1 until 6).random()
+
+        if (ataqueRandom.equals(4 until 6)){
+
+        }else{
+            Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
+    fun huir(){
+        var ataqueRandom:Int=(1 until 6).random()
+
+        if (ataqueRandom == 5 or 6){
+            Toast.makeText(this, "Ole ole que has huido", Toast.LENGTH_SHORT).show()
+        }else{
+            Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
+        }
     }
 }
 
-fun ataque(){
-  var ataqueRandom:Int=(1..6).random()
-
-    if (ataqueRandom.equals(4..6)){
-
-    }else{
-        Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
-    }
-}
-
-
-fun huir(){
-    var ataqueRandom:Int=(1..6).random()
-
-    if (ataqueRandom.equals(5 or 6)){
-        Toast.makeText(this, "Ole ole que has huido", Toast.LENGTH_SHORT).show()
-    }else{
-        Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
-    }
-}

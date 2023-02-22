@@ -14,7 +14,7 @@ class pantallaEnemigo : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.botonLuchar.setOnClickListener(){
-            val intent= Intent(this, pantallaBlanco::class.java)
+            val intent= Intent(this, pelea::class.java)
             startActivity(intent)
         }
 

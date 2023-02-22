@@ -1,7 +1,7 @@
 package com.example.ejercicio_10_aleatorizador_eventos
 
 
-class Personaje( private var nombre: String="",private var clase:String="", private var raza:String, var mochila: Mochila=Mochila(100)):java.io.Serializable {
+class Personaje(private var nombre: String="",private var clase:String="", private var raza:String, var mochila: Mochila=Mochila(100), private var  vida:Int):java.io.Serializable {
 
 
     fun getClase(): String {
@@ -24,6 +24,14 @@ class Personaje( private var nombre: String="",private var clase:String="", priv
     }
     fun setNombre(newnombre: String){
         clase=newnombre
+    }
+
+
+    fun getVida(): Int {
+        return vida
+    }
+    fun setVida(newVida: Int){
+        vida=newVida
     }
 
 }

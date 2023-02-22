@@ -7,7 +7,7 @@
     tools:context=".pelea">
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBarEnemigo"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="248dp"
         android:layout_height="18dp"
@@ -24,11 +24,11 @@
         android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarEnemigo"
         app:srcCompat="@drawable/enemigo" />
 
     <ProgressBar
-        android:id="@+id/progressBar2"
+        android:id="@+id/progressBarUsuario"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="228dp"
         android:layout_height="15dp"
@@ -46,7 +46,7 @@
         android:text="Atacar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarUsuario"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -57,7 +57,7 @@
         android:text="huir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/botonAtaque"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarUsuario"
         app:layout_constraintVertical_bias="0.298" />
 
     <Button
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toEndOf="@+id/botonhuirP"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarUsuario"
         app:layout_constraintVertical_bias="0.298" />
 
     <TextView
@@ -89,7 +89,7 @@
         android:layout_height="24dp"
         android:gravity="center"
         android:text="Vida usuario"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />

@@ -7,6 +7,28 @@
     tools:context=".pantallaClases">
 
     <Button
+        android:id="@+id/botonMercader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#74C85E0D"
+        android:text="Mercader"
+        app:layout_constraintEnd_toStartOf="@+id/botonBerserker"
+        app:layout_constraintStart_toEndOf="@+id/botonGuerrero"
+        app:layout_constraintTop_toBottomOf="@+id/botonGuerrero" />
+
+    <Button
+        android:id="@+id/botonMago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#74C85E0D"
+        android:text="Mago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+    <Button
         android:id="@+id/botonAceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,42 +37,10 @@
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonMercader"
         app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/botonGuerrero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#74C85E0D"
-        android:text="Guerrero"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonMago" />
-
-    <Button
-        android:id="@+id/botonBerserker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#74C85E0D"
-        android:text="Berserker"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonLadron" />
-
-    <Button
-        android:id="@+id/botonMago"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#74C85E0D"
-        android:text="Mago"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foto" />
 
     <Button
         android:id="@+id/botonLadron"
@@ -60,21 +50,31 @@
         android:backgroundTint="#74C85E0D"
         android:text="Ladrón"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintHorizontal_bias="0.734"
         app:layout_constraintStart_toEndOf="@+id/botonMago"
         app:layout_constraintTop_toBottomOf="@+id/foto" />
 
     <Button
-        android:id="@+id/botonMercader"
+        android:id="@+id/botonBerserker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#74C85E0D"
-        android:text="Mercader"
-        app:layout_constraintEnd_toStartOf="@+id/botonBerserker"
-        app:layout_constraintHorizontal_bias="0.534"
-        app:layout_constraintStart_toEndOf="@+id/botonGuerrero"
-        app:layout_constraintTop_toBottomOf="@+id/botonGuerrero" />
+        android:text="Berserker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonLadron" />
+
+    <Button
+        android:id="@+id/botonGuerrero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#74C85E0D"
+        android:text="Guerrero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonMago" />
 
     <ImageView
         android:id="@+id/foto"
