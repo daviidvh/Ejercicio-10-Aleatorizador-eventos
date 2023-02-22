@@ -4,4 +4,7 @@ class Objetos (private var peso:Int=10, private var valor:Int=125, private var v
     fun getPeso(): Int {
         return peso
     }
+    fun getValor():Int{
+        return valor
+    }
 }
