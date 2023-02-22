@@ -22,7 +22,7 @@ class pelea : AppCompatActivity() {
 
         binding.progressBarUsuario.progress=personaje1.getVida()
         var enemigo:enemigos
-        var numRandomEnemigo:Int=(1 until 2).random()
+        var numRandomEnemigo:Int=(1 .. 2).random()
         if (numRandomEnemigo==1){
             enemigo= enemigoNormal
             binding.progressBarEnemigo.progress=enemigo.vida
@@ -32,9 +32,10 @@ class pelea : AppCompatActivity() {
         }
     }
     fun ataque(){
-        var ataqueRandom:Int=(1 until 6).random()
+        var ataqueRandom:Int=(1 .. 6).random()
 
-        if (ataqueRandom.equals(4 until 6)){
+        if (ataqueRandom.equals(4 .. 6)){
+            Toast.makeText(this, "Ataque bien metido", Toast.LENGTH_SHORT).show()
 
         }else{
             Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
@@ -43,9 +44,9 @@ class pelea : AppCompatActivity() {
 
 
     fun huir(){
-        var ataqueRandom:Int=(1 until 6).random()
+        var ataqueRandomH:Int=(1 .. 6).random()
 
-        if (ataqueRandom == 5 or 6){
+        if (ataqueRandomH == 5 or  6){
             Toast.makeText(this, "Ole ole que has huido", Toast.LENGTH_SHORT).show()
         }else{
             Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
