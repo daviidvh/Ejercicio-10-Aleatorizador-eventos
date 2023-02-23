@@ -15,6 +15,7 @@ class pelea : AppCompatActivity() {
         /**Cositas de la barra**/
         binding.progressBarUsuario.max = personaje1.vida
         binding.progressBarUsuario.progress= personaje1.vida
+
         var enemigo: enemigos
         var numRandomEnemigo: Int = (1..2).random()
         enemigoJefe.vida=200
@@ -49,7 +50,8 @@ class pelea : AppCompatActivity() {
                     personaje1.mochila.addArticulo(Objetos(),this)
                     personaje1.monedero[100] = personaje1.monedero[100]!! +1
 
-                    print(personaje1.mochila.getContenido().count())
+                    println(personaje1.monedero.keys)
+                    println(personaje1.monedero.values)
                 }else{
                     personaje1.vida=personaje1.vida - enemigo.ataque / personaje1.defensa
                     binding.progressBarUsuario.progress= personaje1.vida
