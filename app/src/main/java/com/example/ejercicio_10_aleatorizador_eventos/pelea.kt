@@ -17,6 +17,8 @@ class pelea : AppCompatActivity() {
         binding.progressBarUsuario.progress= personaje1.vida
         var enemigo: enemigos
         var numRandomEnemigo: Int = (1..2).random()
+        enemigoJefe.vida=200
+        enemigoNormal.vida=100
         if (numRandomEnemigo == 1) {
             enemigo = enemigoNormal
             binding.progressBarEnemigo.max = enemigo.vida
@@ -56,6 +58,7 @@ class pelea : AppCompatActivity() {
                 if (personaje1.vida<=0){
                     val intent = Intent(this, muerte::class.java)
                     startActivity(intent)
+
                 }
             } else {
                 Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
