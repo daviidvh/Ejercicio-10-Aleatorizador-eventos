@@ -92,13 +92,12 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textViewRegistro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
+                android:id="@+id/textViewRegistro2"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
                 android:gravity="center"
-                android:onClick="textViewClicable"
-                android:text="Aun no estas registrado.Registrate" />
+                android:text="Aun no estas registrado.Registrate"
+                android:textSize="20sp" />
         </TableRow>
 
     </TableLayout>

@@ -1,8 +1,5 @@
 package com.example.ejercicio_10_aleatorizador_eventos
 
-import android.media.MediaPlayer
-import android.provider.MediaStore.Audio.Media
-
-var personaje1=Personaje("","","",170,10)
-var enemigoJefe=enemigos("Jefe",200,2)
-var enemigoNormal=enemigos("Normal",100,1)
+var personaje1=Personaje("","","",200,0,0)
+var enemigoJefe=enemigos("Jefe",200,30)
+var enemigoNormal=enemigos("Normal",100,20)

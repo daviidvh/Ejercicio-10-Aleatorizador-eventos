@@ -49,7 +49,8 @@ class pantallaResumen : AppCompatActivity() {
         binding.mochila.setText(tamMochila.toString())
         binding.vida.setText(vida.toString())
         binding.monedero.setText(monedero.toString())
-
+        personaje1.fuerza=randomFuerza
+        personaje1.defensa=randomDefensa
 
         binding.botonComenzar.setOnClickListener {
             val intent= Intent(this, MainActivity::class.java)
