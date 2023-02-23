@@ -33,26 +33,4 @@ class Personaje(private var nombre: String="", private var clase:String="", priv
     fun setNombre(newnombre: String){
         clase=newnombre
     }
-/**
-
-    fun getVida(): Int {
-        return vida
-    }
-    fun setVida(newVida: Int){
-        vida=newVida
-    }
-    fun getFuerza(): Int {
-        return fuerza
-    }
-    fun setFuerza(newFuerza: Int){
-        fuerza=newFuerza
-    }
-
-    fun getDefensa(): Int {
-        return defensa
-    }
-    fun setDefensa(newDefensa: Int){
-        defensa=newDefensa
-    }**/
-
 }

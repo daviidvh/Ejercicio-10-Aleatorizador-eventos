@@ -59,8 +59,7 @@ class pelea : AppCompatActivity() {
                 }
             } else {
                 Toast.makeText(this, "Ataque fallido", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+
             }
         }
 
@@ -69,6 +68,10 @@ class pelea : AppCompatActivity() {
             var ataqueRandomH: Int = (1..6).random()
             if (ataqueRandomH in 5..6) {
                 Toast.makeText(this, "Ole ole que has huido", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }else{
+                Toast.makeText(this, "No has podido huir", Toast.LENGTH_SHORT).show()
             }
         }
 
