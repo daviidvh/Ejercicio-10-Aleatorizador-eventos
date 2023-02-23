@@ -61,7 +61,7 @@ class login : AppCompatActivity() {
                 Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
             }
             x.setOnClickListener() {
-                Toast.makeText(this, "eee", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Vamos al registro", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, registrado::class.java)
                 startActivity(intent)
             }
