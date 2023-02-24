@@ -6,6 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".pantallaEnemigo">
 
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064">
+
+        <ImageButton
+            android:id="@+id/btnplay"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:background="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/btnpausa"
+            android:layout_width="29dp"
+            android:layout_height="23dp"
+            android:background="@drawable/pausa" />
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="243dp"

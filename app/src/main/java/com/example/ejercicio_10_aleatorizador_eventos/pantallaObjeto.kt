@@ -15,7 +15,7 @@ class pantallaObjeto : AppCompatActivity() {
         setContentView(binding.root)
         binding.botonRecoger.setOnClickListener(){
             personaje1.mochila.addArticulo(Objetos(), applicationContext)
-            val intent= Intent(this, pantallaBlanco::class.java)
+            val intent= Intent(this, cosasMercader::class.java)
             startActivity(intent)
 
         }
@@ -23,6 +23,15 @@ class pantallaObjeto : AppCompatActivity() {
         binding.botonContinuarObj.setOnClickListener(){
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+        binding.btnpausa.setOnClickListener(){
+            /**Atraves del metodo pause pausamos la musica**/
+            mediaPlayer.pause()
+        }
+
+        binding.btnplay.setOnClickListener(){
+            /**Con el metodo start volvemos a empezar la musica**/
+            mediaPlayer.start()
         }
     }
 }

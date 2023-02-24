@@ -22,5 +22,16 @@ class pantallaEnemigo : AppCompatActivity() {
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        binding.btnpausa.setOnClickListener(){
+            /**Atraves del metodo pause pausamos la musica**/
+            mediaPlayer.pause()
+        }
+
+        binding.btnplay.setOnClickListener(){
+            /**Con el metodo start volvemos a empezar la musica**/
+            mediaPlayer.start()
+        }
     }
+
+
 }

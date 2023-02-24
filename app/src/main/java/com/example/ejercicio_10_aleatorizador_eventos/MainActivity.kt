@@ -11,29 +11,29 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnpausa.setOnClickListener(){
+        binding.btnpausa.setOnClickListener() {
             mediaPlayer.pause()
         }
 
-        binding.btnplay.setOnClickListener(){
+        binding.btnplay.setOnClickListener() {
             mediaPlayer.start()
         }
 
 
-        binding.imgDado.setOnClickListener(){
-            var numAleatorio=(1..4).random()
+        binding.imgDado.setOnClickListener() {
+            var numAleatorio = (1..4).random()
 
-            if(numAleatorio==1){
-                val intent= Intent(this, pantallaObjeto::class.java)
+            if (numAleatorio == 1) {
+                val intent = Intent(this, pantallaObjeto::class.java)
                 startActivity(intent)
-            }else if (numAleatorio==2){
-                val intent= Intent(this, pantallaCiudad::class.java)
+            } else if (numAleatorio == 2) {
+                val intent = Intent(this, pantallaCiudad::class.java)
                 startActivity(intent)
-            }else if (numAleatorio==3){
-                val intent= Intent(this, pantallaMercader::class.java)
+            } else if (numAleatorio == 3) {
+                val intent = Intent(this, pantallaMercader::class.java)
                 startActivity(intent)
-            }else if (numAleatorio==4){
-                val intent= Intent(this, pantallaEnemigo::class.java)
+            } else if (numAleatorio == 4) {
+                val intent = Intent(this, pantallaEnemigo::class.java)
                 startActivity(intent)
 
             }

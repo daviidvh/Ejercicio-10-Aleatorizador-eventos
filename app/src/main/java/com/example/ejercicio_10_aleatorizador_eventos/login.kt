@@ -2,13 +2,12 @@ package com.example.ejercicio_10_aleatorizador_eventos
 
 import android.content.Intent
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.ejercicio_10_aleatorizador_eventos.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
-
 
 
 class login : AppCompatActivity() {
@@ -16,7 +15,7 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        title="Login"
+        title = "Login"
         /**Creamos la musica**/
         mediaPlayer = MediaPlayer.create(this, R.raw.musica)
         /**Nos posicionamos en el segundo 0**/
@@ -28,12 +27,12 @@ class login : AppCompatActivity() {
 
         var x = findViewById<TextView>(R.id.textViewRegistro2)
 
-        binding.btnpausa.setOnClickListener(){
+        binding.btnpausa.setOnClickListener() {
             /**Atraves del metodo pause pausamos la musica**/
             mediaPlayer.pause()
         }
 
-        binding.btnplay.setOnClickListener(){
+        binding.btnplay.setOnClickListener() {
             /**Con el metodo start volvemos a empezar la musica**/
             mediaPlayer.start()
         }
@@ -57,7 +56,7 @@ class login : AppCompatActivity() {
 
                 }
 
-            }else{
+            } else {
                 Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
             }
             x.setOnClickListener() {

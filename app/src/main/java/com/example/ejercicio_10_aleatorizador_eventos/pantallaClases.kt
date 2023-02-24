@@ -38,5 +38,14 @@ class pantallaClases : AppCompatActivity() {
             startActivity(cambio)
         }
 
+        binding.btnpausa.setOnClickListener(){
+            /**Atraves del metodo pause pausamos la musica**/
+            mediaPlayer.pause()
+        }
+
+        binding.btnplay.setOnClickListener(){
+            /**Con el metodo start volvemos a empezar la musica**/
+            mediaPlayer.start()
+        }
     }
 }
