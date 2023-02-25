@@ -97,7 +97,8 @@
                 android:layout_height="57dp"
                 android:gravity="center"
                 android:text="Aun no estas registrado.Registrate"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:clickable="true" />
         </TableRow>
 
     </TableLayout>

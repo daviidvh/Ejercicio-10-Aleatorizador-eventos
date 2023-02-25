@@ -25,7 +25,6 @@ class login : AppCompatActivity() {
         /**Hacemos la musica infinita**/
         mediaPlayer.isLooping = true
 
-        var x = findViewById<TextView>(R.id.textViewRegistro2)
 
         binding.btnpausa.setOnClickListener() {
             /**Atraves del metodo pause pausamos la musica**/
@@ -59,11 +58,11 @@ class login : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
             }
-            x.setOnClickListener() {
-                Toast.makeText(this, "Vamos al registro", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, registrado::class.java)
-                startActivity(intent)
-            }
+        }
+        binding.textViewRegistro2.setOnClickListener() {
+            Toast.makeText(this, "Vamos al registro", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, registrado::class.java)
+            startActivity(intent)
         }
     }
 }
