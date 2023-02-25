@@ -3,6 +3,7 @@ package com.example.ejercicio_10_aleatorizador_eventos
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import com.example.ejercicio_10_aleatorizador_eventos.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
         binding.btnpausa.setOnClickListener() {
             mediaPlayer.pause()

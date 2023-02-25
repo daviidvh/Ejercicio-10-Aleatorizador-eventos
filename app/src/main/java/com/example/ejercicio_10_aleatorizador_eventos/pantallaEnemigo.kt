@@ -12,7 +12,6 @@ class pantallaEnemigo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityPantallaEnemigoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.botonLuchar.setOnClickListener(){
             val intent= Intent(this, pelea::class.java)
             startActivity(intent)
@@ -32,6 +31,4 @@ class pantallaEnemigo : AppCompatActivity() {
             mediaPlayer.start()
         }
     }
-
-
 }

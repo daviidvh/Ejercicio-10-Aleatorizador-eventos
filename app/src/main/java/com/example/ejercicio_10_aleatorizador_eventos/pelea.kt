@@ -1,6 +1,8 @@
 package com.example.ejercicio_10_aleatorizador_eventos
 
 import android.content.Intent
+import android.content.res.Configuration
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -8,10 +10,24 @@ import com.example.ejercicio_10_aleatorizador_eventos.databinding.ActivityPantal
 import com.example.ejercicio_10_aleatorizador_eventos.databinding.ActivityPeleaBinding
 
 class pelea : AppCompatActivity() {
+    private lateinit var mediaPlayerBatalla: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityPeleaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        /**Pausamos la musica de fondo**/
+        mediaPlayer.pause()
+
+        /**Implementamos la musica de la batalla**/
+        mediaPlayerBatalla = MediaPlayer.create(this, R.raw.batalla)
+        mediaPlayerBatalla.seekTo(0)
+        mediaPlayerBatalla.start()
+        mediaPlayer.isLooping = true
+
+        /**Ponemos musica de victoria**/
+        var mediaPlayerVictoria = MediaPlayer.create(this, R.raw.victoria)
+
         /**Cositas de la barra**/
         binding.progressBarUsuario.max = personaje1.vida
         binding.progressBarUsuario.progress= personaje1.vida
@@ -42,6 +58,7 @@ class pelea : AppCompatActivity() {
                 binding.progressBarEnemigo.progress=enemigo.vida
                 println("Enemigo:"+enemigo.vida)
                 if(enemigo.vida<=0){
+                    mediaPlayerVictoria.start()
                     Toast.makeText(this, "Enemigo muerto", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
@@ -49,7 +66,6 @@ class pelea : AppCompatActivity() {
                     personaje1.mochila.addArticulo(Objetos(),this)
                     personaje1.mochila.addArticulo(Objetos(),this)
                     personaje1.monedero[100] = personaje1.monedero[100]!! +1
-
                     println(personaje1.monedero.keys)
                     println(personaje1.monedero.values)
                 }else{
@@ -73,6 +89,7 @@ class pelea : AppCompatActivity() {
             var ataqueRandomH: Int = (1..6).random()
             if (ataqueRandomH in 5..6) {
                 Toast.makeText(this, "Ole ole que has huido", Toast.LENGTH_SHORT).show()
+                mediaPlayerBatalla.pause()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }else{
@@ -98,12 +115,21 @@ class pelea : AppCompatActivity() {
 
         binding.btnpausa.setOnClickListener(){
             /**Atraves del metodo pause pausamos la musica**/
-            mediaPlayer.pause()
+            mediaPlayerBatalla.pause()
         }
 
         binding.btnplay.setOnClickListener(){
             /**Con el metodo start volvemos a empezar la musica**/
-            mediaPlayer.start()
+            mediaPlayerBatalla.start()
         }
     }
+    override fun onPause() {
+        super.onPause()
+
+        // Detener mediaPlayerBatalla si se encuentra en reproducción
+        if (mediaPlayerBatalla.isPlaying) {
+            mediaPlayerBatalla.pause()
+        }
+    }
+
 }

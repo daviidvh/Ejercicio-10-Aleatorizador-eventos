@@ -1,5 +1,5 @@
 package com.example.ejercicio_10_aleatorizador_eventos
 
-var personaje1=Personaje("","","",1,0,0)
+var personaje1=Personaje("","","",100,0,0)
 var enemigoJefe=enemigos("Jefe",200,30)
 var enemigoNormal=enemigos("Normal",100,20)
